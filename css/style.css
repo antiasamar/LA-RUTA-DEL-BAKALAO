@@ -196,25 +196,14 @@ header > a > img {
     display: block;
 }
 
+/* FOOTER */
 
-
-
-@media screen and (max-width:480px) {
-
-    header {
-        padding-left: 10px;
-    }
-    
-     
-    .nav-desktop {
-        display: none;
-    }
-
-    .hamb {
-        display: block;
-    }
-
+footer > div:first-child{
+    background-color: var(--ac-color);
 }
+
+
+
 
 
 
@@ -233,3 +222,21 @@ header > a > img {
 /* TICKET */
 
 /* FORMU */
+
+
+@media screen and (max-width:480px) {
+
+    header {
+        padding-left: 10px;
+    }
+    
+     
+    .nav-desktop {
+        display: none;
+    }
+
+    .hamb {
+        display: block;
+    }
+
+}
