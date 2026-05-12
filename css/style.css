@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: var(--bg-color);
     color: var(--text-color);
 }
 
@@ -94,6 +93,10 @@ p {
     font-family: Normal;
 }
 
+body {
+    background-color: var(--bg-color);
+}
+
 /* NAV */
 
 
@@ -110,6 +113,7 @@ header {
     border-bottom: 1px solid var(--text-color);
     width: 100%;
     font-family: Medium;
+    z-index: 9999;
 }
 
 nav > ul {
@@ -213,9 +217,132 @@ header > a > img {
 
 /* FOOTER */
 
-footer > div:first-child{
+footer {
     background-color: var(--ac-color);
+    color: var(--bg-color);
+    /* height: 50vh; */
+    width: 100vw;
+    margin: 0px -40px;
+    padding: 6rem 40px 0px 40px;
+    /* overflow: hidden; */
 }
+
+
+.bg-yellow-footer > div > img {
+    width: 15vh;
+    height: auto;
+    margin-bottom: 4rem;
+    
+}
+
+.bg-yellow-footer > div > h2 {
+    color: var(--bg-color);
+    font-size: 2rem;
+}
+
+.form-item-footer > div > a > p {
+    background-color: var(--bg-color);
+    width: fit-content;
+    padding: 8px 40px;
+    border-radius: 20px;
+}
+
+.form-item-footer {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.form-item-footer > div > input {
+    width: 20rem;
+    border: 2px solid var(--bg-color);
+}
+
+.form-item-footer > div {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+   
+}
+
+.bg-yellow-footer {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    padding-bottom: 40px;
+}
+
+.bg-yellow-footer > div:last-child {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.center-footer {
+    align-self: center;
+}
+
+.bg-yellow-footer > div > div > h2 {
+    color: var(--bg-color);
+    font-size: 1.5rem;
+}
+
+.bg-yellow-footer > div > div > p {
+    color: var(--bg-color);
+}
+
+.bg-yellow-footer > div > div > a > i {
+    color: var(--bg-color);
+    font-size: 2rem;
+    margin-left: 1rem;
+}
+
+.check-footer {
+    display: flex;
+    align-self: center;
+    color: var(--bg-color);
+    padding: 1rem;
+    gap: 0.5rem;
+    padding-bottom: 6rem;
+}
+
+.check-footer > p {
+    color: var(--bg-color); 
+    font-size:  0.95rem;
+}
+
+.check-footer > input {
+    width: 1.5rem;
+}
+
+.bg-black-footer {
+    background-color: var(--bg-color);
+    margin: 0px -40px;
+}
+
+.bg-black-footer > ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+    height: 3rem;
+    flex-wrap: wrap;
+}
+
+.bg-black-footer > ul > li > p {
+    font-size: 1rem;
+}
+
+
+
+
+
+
+
 
 
 
