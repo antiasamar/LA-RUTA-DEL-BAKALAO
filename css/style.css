@@ -79,6 +79,10 @@ ul {
     padding: 0 40px;
 }
 
+/* body {
+    overflow-x: hidden;
+} */
+
 h1 {
     font-size: 3.5rem;
     font-family: Druk;
@@ -95,8 +99,6 @@ p {
 }
 
 /* NAV */
-
-
 header {
     position: fixed;
     top: 0;
@@ -186,7 +188,6 @@ header > a > img {
     transform: scale(1.8);
 }
 
-
 .side-menu {
     display: none;
 }
@@ -194,10 +195,6 @@ header > a > img {
 .hamb > .fa-xmark {
     display: none;
 }
-
-/* .hamb > .fa-bars {
-
-} */
 
 .side-menu:checked ~ .nav-mobile { 
     max-height: 100%;
@@ -210,28 +207,6 @@ header > a > img {
 .side-menu:checked ~ .hamb > .fa-xmark {
     display: block;
 }
-
-
-
-
-@media screen and (max-width:480px) {
-
-    header {
-        padding-left: 10px;
-    }
-    
-     
-    .nav-desktop {
-        display: none;
-    }
-
-    .hamb {
-        display: block;
-    }
-
-}
-
-
 
 
 
@@ -316,24 +291,106 @@ header > a > img {
     font-family: Light;
 }
 
+.subtitle {
+    font-family: Semibold;
+    font-size: 3rem;
+    padding: 80px 0 0px 0;
+    border-bottom: solid 1.7px var(--text-color);
+    width: fit-content;
+}
 
-#carrousel-disco > .carrousel1-disco {
+.images-disco > .slideshow-disco {
     margin: 3rem auto;
     display: flex;
-    gap: 1rem;
     width: 80%;
     overflow-x: auto;
     margin: 1rem auto;
     display: flex;
     gap: 5rem;
+    padding: 40px 0 0 0;
 }
 
-#carrousel-disco > .carrousel1-disco > figure {
+.images-disco > .slideshow-disco > figure {
     flex: 0 0 20rem;
     align-items: center;
     padding: 1rem;
 }
 
+#discoteca > .images-disco > .delay-disco {
+    padding: 80px 0 80px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translatex(40px);
+}
+
+#discoteca > .images-disco > .delay-disco > figure {
+    display: flex;
+    gap: 40px;
+    align-items: flex-end;
+}
+
+#discoteca > .images-disco > .delay-disco > figure > figcaption {
+    display: flex;
+    align-items: flex-end;
+    gap: 10px;
+    font-size: 1.2rem;
+    font-family: Light;
+    border-top: solid 1px var(--text-color);
+    height: auto;
+    width: 100%;
+    padding: 4px 0 0 0;
+}
+
+#discoteca > .images-disco > .delay-disco > .banner-disco {
+    width: 100%;
+    height: auto;
+    margin-top: 60px;
+}
+
+#discoteca > .images-disco > .galleryzoom-disco {
+    display: flex;
+    padding: 60px 0;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    width: 100%;
+    scale: 0.8;
+}
+
+#discoteca > .images-disco > .galleryzoom-disco > img {
+    width: fit-content;
+    height: auto;
+    transition: 0.3s;
+    /* scale: 1; */
+    flex: 0.8;
+}
+
+#discoteca > .images-disco > .galleryzoom-disco > img:hover {
+    flex: 1;
+    transition: 0.3s ease-in-out;
+    /* scale: 1.2; */
+}
+
+#discoteca > .images-disco > .galleryzoom-disco > img:not(:hover) {
+    flex: 0.6;
+    transition: 0.3s ease-in-out;
+    /* scale: 0.8; */
+}
+
+#discoteca > .images-disco > .gallery-disco {
+    padding: 60px 0;
+}
+
+#discoteca > .images-disco > .gallery-disco > .row-gallery-disco {
+    display: flex;
+    gap: 0.5rem;
+    padding: 5px 0;
+}
+
+#discoteca > .images-disco > .gallery-disco > .row-gallery-disco > .x {
+    opacity: 0;
+}
 
 
 
@@ -344,3 +401,21 @@ header > a > img {
 /* TICKET */
 
 /* FORMU */
+
+
+@media screen and (max-width:480px) {
+
+    header {
+        padding-left: 10px;
+    }
+    
+     
+    .nav-desktop {
+        display: none;
+    }
+
+    .hamb {
+        display: block;
+    }
+
+}
