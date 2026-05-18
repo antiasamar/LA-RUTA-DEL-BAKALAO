@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: var(--bg-color);
     color: var(--text-color);
 }
 
@@ -98,6 +97,11 @@ p {
     font-family: Normal;
 }
 
+body {
+    background-color: var(--bg-color);
+    overflow-x: hidden;
+}
+
 /* NAV */
 header {
     position: fixed;
@@ -112,6 +116,7 @@ header {
     border-bottom: 1px solid var(--text-color);
     width: 100%;
     font-family: Medium;
+    z-index: 9999;
 }
 
 nav > ul {
@@ -402,6 +407,237 @@ header > a > img {
 
 /* FORMU */
 
+/* MARQUESINA */
+
+.marquesina {
+    /* overflow: clip; */
+    margin: 0 -40px;
+    padding: 1rem 0;
+    background-color: var(--bg-color);
+    border-top: 0.1rem solid var(--ac-color);
+
+}
+
+.marquesina > div {
+    width: max-content;
+    display: flex;
+    gap: 1.3rem;
+    padding-left: 3rem;
+    animation: marquesina 20s linear infinite forwards;
+}
+
+.marquesina > div > p {
+    font-family: Druk;
+    font-size: 1.3rem;
+    color: var(--ac-color);
+    letter-spacing: 2px;
+}
+
+@keyframes marquesina {
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+/* FOOTER */
+
+footer {
+    background-color: var(--ac-color);
+    color: var(--bg-color);
+    width: 100vw;
+    margin: 0px -40px;
+    padding: 6rem 40px 0px 40px;
+}
+
+
+.bg-yellow-footer > div > img {
+    width: 12rem;
+    height: auto;
+    margin-bottom: 5rem;
+    
+}
+
+.bg-yellow-footer > div > h2 {
+    color: var(--bg-color);
+    font-size: 2rem;
+}
+
+.form-item-footer > div > a > p {
+    background-color: var(--bg-color);
+    width: fit-content;
+    padding: 8px 40px;
+    border-radius: 20px;
+    transition: 0.3s ease-in-out;
+}
+
+    
+/* .form-item-footer > div > a > p:hover {
+    color: var(--ac-color);
+    transform: scale(1.1);
+} */
+
+@media (min-width: 1024px) {
+  .form-item-footer > div > a > p:hover {
+    color: var(--ac-color);
+    transform: scale(1.1);
+  }
+}
+
+
+.form-item-footer {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.form-item-footer > div > input {
+    width: 20rem;
+    border: 2px solid var(--bg-color);
+    height: 2.5rem;
+}
+
+
+.form-item-footer > div {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+   
+}
+
+.bg-yellow-footer {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 40px;
+}
+
+.bg-yellow-footer > div:last-child {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.center-footer {
+    align-self: center;
+}
+
+.bg-yellow-footer > div > div > h2 {
+    color: var(--bg-color);
+    font-size: 1.5rem;
+}
+
+.bg-yellow-footer > div > div > p {
+    color: var(--bg-color);
+}
+
+.bg-yellow-footer > div > div > a > i {
+    color: var(--bg-color);
+    font-size: 2rem;
+    margin-left: 1rem;
+}
+
+.check-footer {
+    display: flex;
+    align-self: center;
+    color: var(--bg-color);
+    padding: 1rem;
+    gap: 0.5rem;
+    padding-bottom: 6rem;
+}
+
+.check-footer > p {
+    color: var(--bg-color); 
+    font-size:  0.95rem;
+}
+
+.check-footer > input {
+    min-width: 2rem;
+    height: auto;
+}
+
+.bg-black-footer {
+    background-color: var(--bg-color);
+    margin: 0px -40px;
+}
+
+.bg-black-footer > ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    padding: 10px 20px;
+    align-items: center;
+    justify-content: center;
+    height: 3rem;
+    flex-wrap: wrap;
+}
+
+.bg-black-footer > ul > li > p {
+    font-size: 1rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* HOME */
+
+/* MAPA */
+
+/* DISCOTECA */
+
+/* CATÁLOGO */
+
+/* REMENBER  */
+
+/* TICKET */
+
+/* FORMU */
+
+
+
+
+
+/* TABLET  */
+
+@media screen and (max-width:768px) {
+
+    /* FOOTER */
+
+    footer {
+        padding-top: 4rem;
+    }
+
+    .bg-yellow-footer > div > img {
+    width: 10rem;
+    height: auto;
+    margin-bottom: 4rem;
+    }
+
+     .check-footer {
+        padding-bottom: 3rem;
+    }
+
+    
+
+
+}
+
+
+/* MOBILE */
 
 @media screen and (max-width:480px) {
 
@@ -419,3 +655,21 @@ header > a > img {
     }
 
 }
+
+
+
+
+
+/* HOME */
+
+/* MAPA */
+
+/* DISCOTECA */
+
+/* CATÁLOGO */
+
+/* REMENBER  */
+
+/* TICKET */
+
+/* FORMU */
