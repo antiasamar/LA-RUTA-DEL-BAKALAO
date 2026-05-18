@@ -216,6 +216,38 @@ header > a > img {
     display: block;
 }
 
+/* MARQUESINA */
+
+.marquesina {
+    /* overflow: clip; */
+    margin: 0 -40px;
+    padding: 1rem 0;
+    background-color: var(--bg-color);
+    border-top: 0.1rem solid var(--ac-color);
+
+}
+
+.marquesina > div {
+    width: max-content;
+    display: flex;
+    gap: 1.3rem;
+    padding-left: 3rem;
+    animation: marquesina 20s linear infinite forwards;
+}
+
+.marquesina > div > p {
+    font-family: Druk;
+    font-size: 1.3rem;
+    color: var(--ac-color);
+    letter-spacing: 2px;
+}
+
+@keyframes marquesina {
+    to {
+        transform: translateX(-50%);
+    }
+}
+
 /* FOOTER */
 
 footer {
@@ -246,6 +278,11 @@ footer {
     border-radius: 20px;
 }
 
+.form-item-footer > div > a > p:hover {
+   color: var(--ac-color);
+   transform: scale(1.1);
+}
+
 .form-item-footer {
     display: flex;
     flex-direction: column;
@@ -256,6 +293,7 @@ footer {
     width: 20rem;
     border: 2px solid var(--bg-color);
 }
+
 
 .form-item-footer > div {
     display: flex;
