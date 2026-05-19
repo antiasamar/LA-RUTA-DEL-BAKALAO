@@ -222,15 +222,15 @@ header > a > img {
     display: block;
 }
 
-/* MARQUESINA */
+/* MARQUESINA NEGRA */
 
 .marquesina {
-    /* overflow: clip; */
+    overflow: clip;
     margin: 0 -40px;
     padding: 1rem 0;
     background-color: var(--bg-color);
-    border-top: 0.1rem solid var(--ac-color);
-    border-bottom: 0.1rem solid var(--ac-color);
+    border-top: 0.2rem solid var(--ac-color);
+    border-bottom: 0.2em solid var(--ac-color);
 
 }
 
@@ -249,25 +249,41 @@ header > a > img {
     letter-spacing: 2px;
 }
 
-#espiral {
-    /* overflow: clip; */
+@keyframes marquesina {
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+/* MARQUESINA AMARILLA */
+
+.espiral {
+    overflow: clip;
     margin: 0 -40px;
     padding: 1rem 0;
     background-color: var(--ac-color);
-    border-top: 0.1rem solid var(--bg-color);
+    border-top: 0.2rem solid var(--bg-color);
+    border-bottom: 0.2rem solid var(--bg-color) ;
 
 }
 
+.espiral > div {
+    width: max-content;
+    display: flex;
+    gap: 1.3rem;
+    padding-left: 3rem;
+    animation: espiral 20s linear infinite forwards;
+    background-color: var(--ac-color);
+}
 
-#espiral > div > p {
+.espiral > div > p {
     font-family: Druk;
     font-size: 1.3rem;
     color: var(--bg-color);
     letter-spacing: 2px;
 }
 
-
-@keyframes marquesina {
+@keyframes espiral {
     to {
         transform: translateX(-50%);
     }
@@ -489,7 +505,7 @@ footer {
     100% { left: -500%; }
 }
 
-/* INTRO HOME */
+/* INTRO SECTION HOME */
 
 #intro-home {
     display: flex;
@@ -559,6 +575,7 @@ footer {
 
 #intro-home > div:last-child > div:first-child > h2 {
     color: var(--ac-color);
+    font-size: 3rem;
 }
 
 /* CARRUSEL ENTRADAS HOME */
@@ -625,55 +642,69 @@ footer {
  font-size: 2rem;
 }
 
+/* DECLIVE SECTION HOME */
 
-
-/* .discotecas-home > h1 {
-    text-align: center;
-    padding:  5% 0;
-    font-size: 5vw;
-}
-
-.block-img-discotecas-home > img {
-    max-width: 600px;
-    height: auto;
-}
-
-.view-discotecas-home {
-    display: flex;
-    gap: 2rem;
-    padding-bottom: 5rem;
+.declive-home {
+    background-color: var(--ac-color);
     height: fit-content;
+    width: 100vw;
+    margin: 0 -40px ;
+    padding: 0 40px;
 }
 
-.view-discotecas-home > div:first-child {
-    flex: 50%;
+.declive-home > h1 {
+    font-size: 7vw;
+    padding: 6vh 0;
+    text-align: center;
+    color: var(--bg-color);
+}
+
+.info-declive-home {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding-bottom: 6vh;
+}
+
+.info-declive-home > div:first-child {
+   flex: 35%;
     display: flex;
     flex-direction: column;
-    gap: 20vh;
+    justify-content: right;
+    align-items: center;
 }
 
-
-.view-discotecas-home > div:last-child {
-    flex: 50%;
+.info-declive-home > div:last-child {
+    flex: 60%;
     display: flex;
     flex-direction: column;
-    gap: 90vh;
+    gap: 2rem;
+    justify-content: flex-end;
+    padding-bottom: 2rem; 
+}
+
+.info-declive-home > div:first-child > img {
+   width: 100%;
+   height: auto;
+   padding-bottom: 0.5rem;
+   min-width: 350px;
+   max-width: 500px;
+}
+
+.info-declive-home > div:last-child > h2 {
+    color: var(--bg-color); 
+
+}
+
+.info-declive-home > div:last-child > p {
+    color: var(--bg-color);
+    font-size: 2rem;
 }
 
 
-.view-discotecas-home > div:first-child > div {
-    height: 50vh;
-}
 
-.view-discotecas-home > div:last-child {
-    flex: 50%;
-}
+ 
 
-
-
-.text-discotecas-home > div > img {
-    display: none;
-} */
 
 
 
@@ -712,13 +743,9 @@ footer {
     margin-bottom: 4rem;
     }
 
-     .check-footer {
+    .check-footer {
         padding-bottom: 3rem;
     }
-
-    
-
-
 }
 
 
