@@ -230,10 +230,11 @@ header > a > img {
     padding: 1rem 0;
     background-color: var(--bg-color);
     border-top: 0.1rem solid var(--ac-color);
+    border-bottom: 0.1rem solid var(--ac-color);
 
 }
 
-.marquesina > div {
+.marquesina > div { 
     width: max-content;
     display: flex;
     gap: 1.3rem;
@@ -399,7 +400,7 @@ footer {
 
 /* HOME */
 
-/* HERO HOME */
+/* HERO SECTION HOME */
 
 #hero-home{
     background-color: var(--ac-color);
@@ -407,25 +408,29 @@ footer {
     /* max-height: 100%; */
     margin: 0px -40px;
     display: flex;
-    height: 100vh;
+    max-height: 95vh;
+    min-height: 50vh;
+    height: fit-content;
 }
 
 .arrow-home > img {
-    height: 80vh;
-    width: 20vw;
+    height: 100%;
+    width: 55%;
 }
 
 .carrusel-hero-home {
-    width: 80%;
-    height: 100%;
+    min-width: 90%;
+    max-height: 100%;
+    min-height: 50%;
     overflow: hidden;
 }
 
 .arrow-home {
     height: 100%;
-    width: 10%;
+    width: auto;
+    min-width: 5%;
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     justify-content: center;
 }
 
@@ -438,7 +443,7 @@ footer {
     display: flex;
     width: 600%;
     margin: 0;
-    animation: 10s slider infinite ease-in-out;
+    animation: 16s slider infinite alternate ease-in-out;
 }
 
 .carrusel-hero-home > div > div > figure {
@@ -448,23 +453,209 @@ footer {
 
 @keyframes slider {
     0%   { left: 0; }
-    15%  { left: 0; }
+    10%  { left: 0; }
 
     20%  { left: -100%; }
-    35%  { left: -100%; }
+    30%  { left: -100%; }
 
     40%  { left: -200%; }
-    55%  { left: -200%; }
+    50%  { left: -200%; }
 
     60%  { left: -300%; }
-    75%  { left: -300%; }
+    70%  { left: -300%; }
 
     80%  { left: -400%; }
-    95%  { left: -400%; }
+    90%  { left: -400%; }
 
+    97% { left: -500%; }
     100% { left: -500%; }
 }
 
+/* INTRO HOME */
+
+#intro-home {
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    padding-bottom: 15%;
+}
+
+#intro-home > div:first-child{
+    padding: 15% 10%;
+}
+
+#intro-home > div:first-child > p {
+    font-family: Druk;
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+#intro-home > div:first-child > p > span {
+    color: var(--ac-color);
+}
+
+#intro-home > div:last-child {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    /* gap: 5%; */
+    /* justify-content: space-between; */
+    gap: 2rem;
+    justify-content: flex-start;
+}
+
+#intro-home > div:last-child > div:first-child {
+    flex: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: flex-end;
+    padding-bottom: 2rem;
+}
+
+#intro-home > div:last-child > div:last-child > img {
+   width: 90%;
+   height: auto;
+   padding-bottom: 0.5rem;
+   min-width: 350px;
+   max-width: 500px;
+}
+
+#intro-home > div:last-child > div:last-child > p {
+    color: var(--ac-color);
+    font-size: 1rem;
+    font-family: Normal;
+}
+
+#intro-home > div:last-child > div:last-child {
+    flex: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    align-items: center;
+
+}
+
+#intro-home > div:last-child > div:first-child > p {
+    font-size: 2rem;
+}
+
+#intro-home > div:last-child > div:first-child > h2 {
+    color: var(--ac-color);
+}
+
+/* CARRUSEL ENTRADAS HOME */
+
+.carrusel-entradas-home {
+    height: 20vh;
+    background-color: var(--ac-color);
+    width: 100vw;
+    margin: 0 -40px ;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carrusel-entradas-home > h1 {
+    color: var(--bg-color);
+    text-align: center;
+}
+
+/* LAS DISCOTECAS SECTION HOME  */
+
+.discotecas-home > h1 {
+    font-size: 5vw;
+    padding: 6rem 0;
+    text-align: center;
+}
+
+
+.text-discotecas-home {
+    display: flex;
+    flex-direction: column;
+    gap: 20vh;
+}
+
+.text-discotecas-home > div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 3rem;
+}
+
+.text-discotecas-home > div > div:last-child {
+    display: flex;
+    flex-direction: column;
+   justify-content: flex-end;
+    /* padding-bottom: 3%; */
+    flex: 1 1 300px;   /* texto */
+    min-width: 250px;
+    min-width: 0;
+} 
+
+.text-discotecas-home > div > div:last-child > h2 {
+    font-size: 6rem;
+    color: var(--ac-color);
+}
+
+.text-discotecas-home > div > div:first-child {
+        flex: 1 1 400px; 
+}
+
+/* 
+.text-discotecas-home > div > div:last-child > p {
+ font-size: 2rem;
+} */
+
+
+
+/* .discotecas-home > h1 {
+    text-align: center;
+    padding:  5% 0;
+    font-size: 5vw;
+}
+
+.block-img-discotecas-home > img {
+    max-width: 600px;
+    height: auto;
+}
+
+.view-discotecas-home {
+    display: flex;
+    gap: 2rem;
+    padding-bottom: 5rem;
+    height: fit-content;
+}
+
+.view-discotecas-home > div:first-child {
+    flex: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 20vh;
+}
+
+
+.view-discotecas-home > div:last-child {
+    flex: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 90vh;
+}
+
+
+.view-discotecas-home > div:first-child > div {
+    height: 50vh;
+}
+
+.view-discotecas-home > div:last-child {
+    flex: 50%;
+}
+
+
+
+.text-discotecas-home > div > img {
+    display: none;
+} */
 
 
 
