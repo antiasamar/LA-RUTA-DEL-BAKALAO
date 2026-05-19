@@ -78,9 +78,6 @@ ul {
     padding: 0 40px;
 }
 
-/* body {
-    overflow-x: hidden;
-} */
 
 h1 {
     font-size: 3.5rem;
@@ -231,6 +228,7 @@ header > a > img {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 0 0 60px 0;
 }  
 #mapa > div > img {
     width: 100%;
@@ -239,6 +237,7 @@ header > a > img {
 
 
 /* DISCOTECA */
+
 #discoteca > .header-discoteca-disco {
     padding: 100px 0 20px 0;
     display: flex;
@@ -347,10 +346,23 @@ header > a > img {
     padding: 4px 0 0 0;
 }
 
+#espiral {
+    /* overflow: clip; */
+    margin: 0 -40px;
+    padding: 1rem 0;
+    background-color: var(--ac-color);
+    border-top: 0.1rem solid var(--ac-color);
+}
+
+#espiral > div > p {
+    font-family: Druk;
+    font-size: 1.3rem;
+    color: var(--bg-color);
+    letter-spacing: 2px;
+}
+
 #discoteca > .images-disco > .delay-disco > .banner-disco {
-    width: 100%;
-    height: auto;
-    margin-top: 60px;
+    width: max-content;
 }
 
 #discoteca > .images-disco > .galleryzoom-disco {
@@ -400,6 +412,80 @@ header > a > img {
 
 
 /* CATÁLOGO */
+
+#catalog > h1 {
+    font-family: Druk;
+    padding: 100px 0 60px 0;
+}
+
+#catalog > .menu-catalog {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+#catalog > .menu-catalog > li {
+    color: var(--text-color);
+    font-family: Normal;
+    border-bottom: solid 2px var(--text-color);
+    /* border-top: solid 2px var(--text-color); */
+}
+
+#catalog > .menu-catalog > li > .open {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 6px 0;
+    font-size: 2.2rem;
+}
+
+#catalog > .menu-catalog > li > .open > p {
+    font-family: Druk;
+    font-size: 2rem;
+    padding: 6px 0;
+}
+
+.content-menu-catalog {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-in-out;
+}
+
+.content-menu-catalog .content-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px 0;
+}
+/* OCULTAR CHECKBOX */
+#catalog > .menu-catalog > li > .open-catalog{
+    display: none;
+}
+
+.icon-right {
+    display: flex;
+}
+
+.icon-down {
+    display: none !important;
+    color: var(--ac-color);
+}
+
+
+.open-catalog:checked + .open .icon-right {
+    display: none;
+}
+
+.open-catalog:checked + .open .icon-down {
+    display: flex !important;
+}
+
+.open-catalog:checked ~ .content-menu-catalog {
+    max-height: 500px;
+}
+
+
 
 /* REMENBER  */
 
@@ -581,36 +667,6 @@ footer {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-/* HOME */
-
-/* MAPA */
-
-/* DISCOTECA */
-
-/* CATÁLOGO */
-
-/* REMENBER  */
-
-/* TICKET */
-
-/* FORMU */
-
-
-
-
-
 /* TABLET  */
 
 @media screen and (max-width:768px) {
@@ -658,18 +714,3 @@ footer {
 
 
 
-
-
-/* HOME */
-
-/* MAPA */
-
-/* DISCOTECA */
-
-/* CATÁLOGO */
-
-/* REMENBER  */
-
-/* TICKET */
-
-/* FORMU */
