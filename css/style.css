@@ -216,18 +216,19 @@ header > a > img {
     display: block;
 }
 
-/* MARQUESINA */
+/* MARQUESINA NEGRA */
 
 .marquesina {
-    /* overflow: clip; */
+    overflow: clip;
     margin: 0 -40px;
     padding: 1rem 0;
     background-color: var(--bg-color);
-    border-top: 0.1rem solid var(--ac-color);
+    border-top: 0.2rem solid var(--ac-color);
+    border-bottom: 0.2em solid var(--ac-color);
 
 }
 
-.marquesina > div {
+.marquesina > div { 
     width: max-content;
     display: flex;
     gap: 1.3rem;
@@ -242,25 +243,42 @@ header > a > img {
     letter-spacing: 2px;
 }
 
-#espiral {
-    /* overflow: clip; */
+@keyframes marquesina {
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+/* MARQUESINA AMARILLA */
+
+.espiral {
+    overflow: clip;
     margin: 0 -40px;
     padding: 1rem 0;
     background-color: var(--ac-color);
-    border-top: 0.1rem solid var(--bg-color);
+    border-top: 0.2rem solid var(--bg-color);
+    border-bottom: 0.2rem solid var(--bg-color) ;
 
 }
 
+.espiral > div {
+    width: max-content;
+    display: flex;
+    gap: 1.3rem;
+    padding-left: 3rem;
+    animation: espiral 20s linear infinite forwards;
+    background-color: var(--ac-color);
 
-#espiral > div > p {
+}
+
+.espiral > div > p {
     font-family: Druk;
     font-size: 1.3rem;
     color: var(--bg-color);
     letter-spacing: 2px;
 }
 
-
-@keyframes marquesina {
+@keyframes espiral {
     to {
         transform: translateX(-50%);
     }
@@ -431,12 +449,103 @@ footer {
 /* REMEMBER  */
 
 .content {
-    margin: 100px;
-}
-
-.marquesina.amarilla {
     margin-top: 100px;
 }
+
+.content > .espiral {
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+
+.carteles {
+    /* width: 33%; */
+    /* width: 100%; */
+    gap: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.carteles > div > hr {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.carteles > div > .line1 {
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+.carteles > div > .line2 {
+    margin-top: 15px;
+}
+
+.carteles > div > h1 {
+    font-size: 1.7rem;
+}
+
+.carteles > div > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.carteles > div > div > p {
+    font-size: 1.2rem;
+}
+
+/* BOTÓN */
+
+.btn.negro {
+    font-family: bold;
+    font-size: 0.8rem;
+    color: var(--ac-color);
+
+    border: 0.2rem solid var(--ac-color);
+    border-radius: 2rem;
+    padding: 0.7rem 1.5rem;
+
+    transition: 0.3s ease-in-out;
+
+    /* width: fit-content; */
+}
+
+
+@media (min-width: 1024px) {
+  .btn.negro:hover {
+    background-color: var(--ac-color);
+    color: var(--bg-color);
+    transform: scale(1.1);
+  }
+}
+
+/* @media (max-width: 1050px) {
+    .carteles {
+    display: flex;
+    
+    width: 100%;
+    height: 50%;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+    gap: 15px;
+}
+
+.carteles > div {
+    position: relative;
+    scroll-snap-align: center;
+   
+}
+} */
+
+
+
+
+
 
 /* TICKET */
 
