@@ -27,7 +27,7 @@
 }
 @font-face {
     font-family: Light;
-    src: url(../fonts/Lightitalic.otf);
+    src: url(../fonts/Light.otf);
 }
 @font-face {
     font-family: Lightitalic;
@@ -545,9 +545,30 @@ footer {
 
 
 
-
-
 /* TICKET */
+
+.content > hr {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.content > div {
+    display: flex;
+    flex-direction: row;
+    gap: 70px;
+}
+
+.content > div > div > p {
+    font-family: Light ;
+}
+
+.content > div > div > h1 {
+    font-size: 2.5rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
 
 /* FORMU */
 
