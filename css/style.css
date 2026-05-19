@@ -27,7 +27,7 @@
 }
 @font-face {
     font-family: Light;
-    src: url(../fonts/Lightitalic.otf);
+    src: url(../fonts/Light.otf);
 }
 @font-face {
     font-family: Lightitalic;
@@ -698,8 +698,315 @@ footer {
 
 .info-declive-home > div:last-child > p {
     color: var(--bg-color);
-    font-size: 2rem;
+    font-size: 2.5rem;
 }
+
+/* EL DISEÑO SECTION HOME */
+
+.diseño-home {
+    padding: 6vh 0;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.diseño-home > h1 {
+    font-size: 6vw;
+    padding: 6vh 0;
+    text-align: center;
+    gap: 2rem;
+}
+
+.first-diseño-home {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+}
+
+.first-diseño-home > div:first-child {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.first-diseño-home > div:first-child > img {
+    width: 100%;
+   height: auto;
+   min-width: 350px;
+   max-width: 600px;
+}
+
+.first-diseño-home > div:first-child > img:last-child {
+    align-self: flex-end;
+}
+
+
+
+.first-diseño-home > div:last-child {
+    flex: 1;
+}
+
+.first-diseño-home > div:last-child > p {
+    font-size: 2.5rem;
+}
+
+.first-diseño-home > div:last-child > p > span {
+    color: var(--ac-color);
+}
+
+.second-diseño-home  {
+   display: flex;
+   gap: 3rem;
+   flex-wrap: wrap;
+}
+
+.second-diseño-home > div:first-child{
+    flex: 1; 
+    display: flex;
+  
+}
+
+.left-align-diseño-home > div {
+    justify-content: flex-end;
+}
+
+
+.second-diseño-home > div:first-child > img{
+    width: 100%;
+   height: auto;
+   min-width: 350px;
+   max-width: 600px;
+    object-fit: contain;
+}
+
+.second-diseño-home > div:last-child {
+    flex: 1;
+   
+   
+}
+
+.second-diseño-home > div:last-child > p {
+    font-size: 2.5rem;
+}
+
+.second-diseño-home > div:last-child > p > span {
+    color: var(--ac-color);
+}
+
+/* SEPARADOR FOTO HOME */
+
+.separador-foto-home {
+    display: flex;
+    flex-direction: column;
+}
+
+.img-separador-home {
+    margin:  0 -40px ;
+}
+
+.separador-foto-home > div > img {
+  width: 100%; 
+  
+}
+
+/* DISEÑADORES RUTA SECTION HOME */
+
+.diseñadores-home {
+    padding: 6vh 0;
+}
+
+.diseñadores-home > h1 {
+    padding-bottom: 6vh;
+    text-align: center;
+    font-size: 5vw;
+}
+
+.info-diseñadores-home {
+    display: flex;
+    flex-direction: column;
+    gap: 20vh;
+}
+
+.armandoysilvia {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.armandoysilvia > div:first-child {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    gap: 2rem;
+}
+
+.armandoysilvia > div:first-child > div {
+    flex: 1;
+}
+
+.armandoysilvia > div:first-child  > div:first-child {
+    align-content: flex-end;
+  
+}
+
+.armandoysilvia > div:first-child  > div:first-child > p {
+    text-align: right;
+    padding-left: 20%;
+}
+
+.armandoysilvia > div:first-child > div:last-child {
+    display: flex;
+    gap: 2rem;
+  
+}
+
+.armandoysilvia > div:first-child > div:last-child > img {
+    max-width: 300px;
+}
+
+.middlechild-armandoysilvia {
+    display: flex;
+    gap: 2rem;
+      flex-wrap: wrap;
+}
+
+.middlechild-armandoysilvia > div {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    align-items: flex-end;
+  
+}
+
+.middlechild-armandoysilvia > div:last-child > p {
+    padding-right: 20%;
+}
+
+.armandoysilvia > div:last-child {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.armandoysilvia > div:last-child > div {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.armandoysilvia > div:last-child > div:first-child {
+    align-items: flex-end;
+}
+
+.grupodequedeque {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.grupodequedeque > div {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.grupodequedeque > div > div {
+    flex: 1;
+} 
+
+.grupodequedeque > div:first-child > div:first-child {
+   display: flex;
+   flex-direction: column;
+   align-items: flex-end;
+   gap: 2rem;
+   /* justify-content: space-around; */
+}
+
+.grupodequedeque > div:first-child > div:first-child > p {
+    text-align: right;
+    padding-left: 20%;
+}
+
+.grupodequedeque > div:first-child > div:first-child > img {
+    max-width: 300px;
+    height: auto;
+}
+
+.grupodequedeque > div:last-child > div:first-child {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.grupodequedeque > div:last-child > div:last-child > p {
+    padding-right: 20%;
+}
+
+.quiquecompany {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.quiquecompany > div {
+   display: flex;
+   gap: 2rem;
+   flex-wrap: wrap-reverse;
+}
+
+.quiquecompany > div > div{
+    flex: 1;
+}
+
+.quiquecompany > div:first-child > div:first-child {
+display: flex;
+flex-direction: column;
+align-items: flex-end;
+gap: 2rem;
+}
+
+.quiquecompany > div:first-child > div:first-child > p {
+    text-align: right;
+    padding-left: 20%;
+}
+
+.quiquecompany > div:last-child > div:last-child {
+     transform: scale(1.03);
+}
+
+.quiquecompany > div:last-child > div:first-child {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+   
+}
+
+.img-diseñadores-home {
+  width: 100%;
+   height: auto;
+   min-width: 350px;
+   max-width: 600px;
+   object-fit: contain;
+}
+
+.p-diseñadores-home {
+      font-size: 2.5rem;
+}
+
+.p-diseñadores-home > span {
+    color: var(--ac-color);
+}
+
+
+
+
+
+
+
+
+
 
 
 
