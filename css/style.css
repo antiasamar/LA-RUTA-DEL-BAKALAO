@@ -249,6 +249,24 @@ header > a > img {
     letter-spacing: 2px;
 }
 
+#espiral {
+    /* overflow: clip; */
+    margin: 0 -40px;
+    padding: 1rem 0;
+    background-color: var(--ac-color);
+    border-top: 0.1rem solid var(--bg-color);
+
+}
+
+
+#espiral > div > p {
+    font-family: Druk;
+    font-size: 1.3rem;
+    color: var(--bg-color);
+    letter-spacing: 2px;
+}
+
+
 @keyframes marquesina {
     to {
         transform: translateX(-50%);
