@@ -3,11 +3,283 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-
+    <title>Entradas</title>
+    <link rel="icon" href="media/img/logonegro.png">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style2.css">
+    
+
+    <!-- ICONOS DE FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     
+    <div class="wrapper">
+         <header>
+            <a href="home.html"><img src="media/img/logok.png" alt=""></a>
+            <!-- menu desktop -->
+            <nav class="nav-desktop">
+                <ul class="menu-desktop">
+                    <li>
+                        <a href="map.html">MAPA</a>
+                    </li>
+                    <li>
+                        <a href="catalog.html">CATÁLOGO</a>
+                    </li>
+                    <li>
+                        <a href="remember.html">REMEMBER</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <!-- Icono hamburguesa  (y X)-->
+            <input type="checkbox" id="sideMenu" class="side-menu">
+            <label class="hamb" for="sideMenu">
+                <i class="fa-solid fa-bars"></i>
+                <i class="fa-solid fa-xmark"></i>
+            </label>
+
+
+            <!-- menu móvil -->
+            <nav class="nav-mobile">
+                <ul class="menu-mobile">
+                    <li>
+                        <a href="map.html">MAPA</a>
+                    </li>
+                                <li>
+                        <a href="catalog.html">CATÁLOGO</a>
+                    </li>
+                                <li>
+                        <a href="remember.html">REMEMBER</a>
+                    </li>
+                </ul>
+            </nav>
+
+        </header>
+
+       
+        <div class="content2">
+            <h1>ENTRADAS</h1>
+        
+            <hr>
+
+            <div class="intro">
+                <div>
+                    <p>Lugar:</p>
+                    <h1>Spook Club</h1>
+                    <p>Carr. del Río, 399, 46012 , Valencia</p>
+                </div>
+
+                <div>
+                    <p>Fecha:</p>
+                    <h1>sab, 23 may 2026</h1>
+                    <p>23:59 - 6:00</p>
+                </div>
+
+            </div>
+
+            <hr>
+
+            <div id="total">
+                <div id="selection">
+                    <div id="entradas">
+                        <div class="entrada">
+                            <h2>Entrada general</h2>
+                            <p>Entrada con consumición</p>
+                        </div>
+                        <div class="entrada">
+                            <h2 class="money">12€</h2>
+                            <div>
+                                <button class="value-control"
+                                onclick="this.nextElementSibling.stepDown()">
+                                -
+                                </button>
+
+                                <input class="value-input" type="number" value="1" min="1">
+
+                                <button class="value-control"
+                                onclick="this.previousElementSibling.stepUp()">
+                                +
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div id="entradas">
+                        <div class="entrada">
+                            <h2>Entrada VIP</h2>
+                            <p>Entrada con reservado</p>
+                        </div>
+                        <div class="entrada">
+                            <h2 class="money">18€</h2>
+                            <div>
+                                <button class="value-control"
+                                onclick="this.nextElementSibling.stepDown()">
+                                -
+                                </button>
+
+                                <input class="value-input" type="number" value="0" min="1">
+
+                                <button class="value-control"
+                                onclick="this.previousElementSibling.stepUp()">
+                                +
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div id="resumen">
+                    <div class="ticket-resumen">
+                        <h2>x 1 Ticket general</h2>
+                        <h2>12€</h2>
+                    </div>
+                    <hr class="dotted-line">
+                    <div>
+                        <p>Gastos de gestión</p>
+                        <p>-</p>
+                    </div>
+                    <hr>
+                    <div>
+                        <h2>Total</h2>
+                        <h2>12€</h2>
+                    </div>
+                    <p class="tasas">* Tasas e impuestos incluidos</p>
+                    <a class="btn negro" href="formu.html">CONTINUAR</a>
+                </div>
+            </div>
+            <div class="mapaspook">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3082.5983928405394!2d-0.3377441230934817!3d39.410591071619045!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd6049e1700c70b7%3A0xd1ab42b49ab3f249!2sDiscoteca%20Spook!5e0!3m2!1ses!2ses!4v1779292148210!5m2!1ses!2ses" width="100%" height="300vh" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+            <div class="backto">
+                <a href="remember.html">
+                    <i class="fa-solid fa-arrow-left"></i>
+                    <p>VOLVER AL REMEMBER</p>
+                </a>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+           
+        
+        </div>
+
+        
+
+
+        <div class="marquesina">
+            <div>
+                <p>ARCHIVO VISUAL DE LA RUTA</p>
+                <p>//</p>
+                <p>VALENCIA</p>
+                <p>//</p>
+                <p>1980-1995</p>
+                <p>//</p>
+                <p>ARCHIVO VISUAL DE LA RUTA</p>
+                <p>//</p>
+                <p>VALENCIA</p>
+                <p>//</p>
+                <p>1980-1995</p>
+                <p>//</p>
+                <p>ARCHIVO VISUAL DE LA RUTA</p>
+                <p>//</p>
+                <p>VALENCIA</p>
+                <p>//</p>
+                <p>1980-1995</p>
+                <p>//</p>
+                <p>ARCHIVO VISUAL DE LA RUTA</p>
+                <p>//</p>
+                <p>VALENCIA</p>
+                <p>//</p>
+                <p>1980-1995</p>
+                <p>//</p>
+               
+            </div>
+        </div>
+
+        <footer>
+
+            <div class="bg-yellow-footer">
+
+                <div class="center-footer">
+                    <img src="media/img/logonegro.png" alt="">
+                </div>
+
+                <div class="form-item-footer center-footer">
+                    <h2>NEWSLETTER</h2>
+                    <div> 
+                        <input type="email" id="uemail" name="user_email" required>
+                        <a href="">
+                            <p>
+                                SUSCRÍBETE
+                            </p>
+                        </a>
+                        
+                    </div>
+                    
+                </div>
+                
+                <div class="check-footer">
+                    <input type="checkbox" name="accept_subs" id="subscribe">
+                    <p>Deseo recibir correos promocionales.</p>
+                </div>
+
+                <div>
+                    <div>
+                        <h2>ORGANIZAN:</h2>
+                        <p>Marina Moret</p>
+                        <p>Lilia Redero</p>
+                        <p>Antía Sampedro</p>
+                    </div>
+
+                    <div>
+                        <a href="">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a> 
+
+                        <a href="">
+                        <i class="fa-brands fa-instagram"></i>
+                        </a> 
+
+                        <a href="">
+                            <i class="fa-brands fa-x-twitter"></i>
+                        </a> 
+
+                        <a href="">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a> 
+
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="bg-black-footer">
+                <ul>
+                    <li><p>Política de privacidad</p></li>
+                    <li><p>Cookies</p></li>
+                    <li><p>Términos y condiciones</p></li>
+                    <li><p>Contacto</p></li>
+                </ul>
+
+            </div>
+
+
+        </footer>
+
+
+    </div>
+
+
 </body>
 </html>

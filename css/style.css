@@ -1676,11 +1676,381 @@ img {
 
 /* REMENBER  */
 
+
+.content {
+    margin-top: 100px;
+}
+
+/* #title {
+    font-size: 3.2vw;
+} */
+
+
+.content > .espiral {
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+
+.carteles {
+    /* width: 33%; */
+    /* width: 100%; */
+    gap: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.carteles > div > hr {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.carteles > div > .line1 {
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+.carteles > div > .line2 {
+    margin-top: 15px;
+}
+
+.carteles > div > h1 {
+    font-size: 1.7rem;
+}
+
+.carteles > div > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.carteles > div > div > p {
+    font-size: 1.2rem;
+}
+
+/* @media (max-width: 9800) {
+    #title {
+        font-size: 3000rem;
+    }
+} */
+
+@media (max-width: 1050px) {
+    .carteles {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 720px) {
+  #title {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  #title {
+    font-size: 2.3rem;
+  }
+}
+
+/* -BOTÓN */
+
+.btn.negro {
+    font-family: bold;
+    font-size: 0.8rem;
+    color: var(--ac-color);
+    text-align: center;
+    border: 0.2rem solid var(--ac-color);
+    border-radius: 2rem;
+    padding: 0.7rem 1.5rem;
+
+    transition: 0.3s ease-in-out;
+
+    /* width: fit-content; */
+}
+
+
+@media (min-width: 720px) {
+  .btn.negro:hover {
+    background-color: var(--ac-color);
+    color: var(--bg-color);
+    transform: scale(1.1);
+  }
+}
+
+
+
 /* TICKET */
+
+.content2, .content3 {
+    margin-top: 100px;
+}
+
+.content2 > hr {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.content2 > .intro {
+    display: flex;
+    flex-direction: row;
+    gap: 70px;
+}
+
+.content2 > .intro > div > p {
+    font-family: Light ;
+}
+
+.content2 > .intro > div > h1 {
+    font-size: 2.5rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* FORMULARIO TICKET  */
+
+/* .content2 > h1 {
+    font-size: 2.5rem;
+} */
+
+/* input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+} */
+
+#entradas {
+    display: flex;
+    flex-direction: row;
+    /* width: 60vw; */
+    width: 100%;
+    justify-content: space-between;
+    border: 2px solid var(--text-color);
+    padding: 1rem;
+}
+
+#selection {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    flex: 2;
+
+}
+
+.entrada > h2, #resumen > div > h2{
+    font-size: 1.5rem;
+}
+
+.money {
+    display: flex;
+    justify-content: right;
+}
+
+.entrada {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 0.25rem;
+}
+
+/* RESUMEN */
+
+#resumen {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* justify-content: space-around; */
+    flex: 1;
+}
+#resumen > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* width: 32vw; */
+    width: 100%;
+}
+
+#resumen >.dotted-line {
+    border: none;
+    border-top: 2px dashed #ffffff; 
+    height: 0;
+    
+}
+
+#resumen > div p {
+    font-family: light;
+}
+
+#resumen > div.ticket-resumen > h2 {
+    font-family: light;
+}
+
+#resumen > p {
+    font-size: 0.8rem;
+}
+
+
+#total {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 2vw;
+    /* margin-bottom: 27.3vh; */
+    /* align-items: flex-start; */
+}
+
+/* MAPA TICKETS */
+
+.mapaspook {
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+}
+
+/* RESPONSIVE TICKETS */
+
+@media (max-width: 720px) {
+  .content2 > h1, .content2 > .intro > div > h1, .content3 > h1 {
+    font-size: 2.5rem;
+  }
+  /* .content2 > #total > #selection > #entradas >.entrada > h2, .content2 > #total > #resumen > .ticket-resumen > h2, .content2 > #total > #resumen > div > h2 {
+    font-size: 2.4vw;
+  } */
+  /* .content2 > #total > #resumen > div > p, .content2 > #total > #resumen > p, .content2 > #total > #selection > #entradas > .entrada > p {
+    font-size: 1.8vw;
+  }
+
+  .content2 > .intro > div > p {
+    font-size: 0.8rem;
+  } */
+
+}
+
+@media (max-width: 480px) {
+  .content2 > h1, .content2 > .intro > div > h1, .content3 > h1 {
+    font-size: 2.3rem;
+  }
+}
+
+@media (max-width: 700px) {
+    #total {
+        flex-direction: column;
+        gap: 6vw;
+    }
+
+    #resumen {
+       gap: 1rem;
+    }
+}
+
+/* -BOTON BACK */
+
+.backto {
+    padding-bottom: 20px;
+}
+
+.backto > a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.backto > a > p {
+    font-size: 1rem;
+    font-family: Druk;
+}
+
+
 
 /* FORMU */
 
 
+/* CAJA */
+.input-box {
+    position: relative;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+/* INPUT */
+.input-box input {
+    width: 100%;
+    padding: 14px 12px;
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+    font-size: 16px;
+    outline: none; 
+}
+
+/* LABEL */
+.input-box label {
+    position: absolute;
+    top: 50%;
+    left: 12px;
+    transform: translateY(-50%);
+    color: white;
+    /* opacity: 0.6; */
+    pointer-events: none;
+}
+
+input::placeholder, textarea::placeholder {
+    color: white;
+    opacity: 1; 
+    font-family: light;
+}
+
+#form-menu {
+    width: 100%;
+    flex: 2;
+}
+
+#form-menu > div{
+    display: flex;
+    flex-direction: row;
+    gap: 2vw;
+}
+
+.content3 > #total > #resumen {
+    display: flex;
+    justify-content: space-between;
+    height: 25vh;
+}
+
+.content3 > hr {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.content3 > .backto {
+    margin-top: 42.5vh;
+}
+
+@media screen and (max-width: 480px) {
+    
+    #form-menu > div {
+        display: flex;
+        flex-direction: column;
+        gap: none;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    
+    .content3 > .backto {
+    margin-top: 27.5vh;
+}
+}
+
+@media screen and (max-width: 480px) {
+    
+    .content3 > .backto {
+    margin-top: 13.7vh;
+}
+}
 
 /* MEDIA QUERIES ANTÍA  */
 
