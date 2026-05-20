@@ -430,7 +430,6 @@ footer {
 
 /* INDEX */
 
-/* Sección ocupa toda la pantalla */
 .intro-video {
     position: relative;
     width: 100vw;
@@ -438,7 +437,6 @@ footer {
     overflow: hidden;
 }
 
-/* Video ocupa toda la pantalla */
 .bg-video {
     position: absolute;
     top: 50%;
@@ -461,7 +459,7 @@ footer {
     gap: 3rem;
 }
 
-/* Logo aparece primero */
+
 .logo-intro {
     width: 40vw;
     max-width: 80%;
@@ -470,7 +468,7 @@ footer {
     animation-delay: 2s;
 }
 
-/* Botón aparece después */
+
 .btn-intro {
     padding: 1rem 2rem;
     background-color: var(--ac-color);
@@ -484,10 +482,10 @@ footer {
 
     opacity: 0;
     animation: fadeUp 1.2s ease forwards;
-    animation-delay: 3.2s; /* aparece 1.2s después del logo */
+    animation-delay: 3.2s; 
 }
 
-/* Animación más interesante que solo fade */
+
 @keyframes fadeUp {
     from {
         opacity: 0;
@@ -587,7 +585,7 @@ footer {
     display: flex;
     flex-direction: column;
     height: fit-content;
-    padding-bottom: 15%;
+    padding-bottom: 6vh;
 }
 
 #intro-home > div:first-child{
@@ -630,11 +628,11 @@ footer {
    max-width: 500px;
 }
 
-#intro-home > div:last-child > div:last-child > p {
+/* #intro-home > div:last-child > div:last-child > p {
     color: var(--ac-color);
     font-size: 1rem;
     font-family: Normal;
-}
+} */
 
 #intro-home > div:last-child > div:last-child {
     flex: 35%;
@@ -656,27 +654,77 @@ footer {
 
 /* CARRUSEL ENTRADAS HOME */
 
-.carrusel-entradas-home {
-    height: 20vh;
+/* .entradas-home {
     background-color: var(--ac-color);
-    width: 100vw;
-    margin: 0 -40px ;
-    padding: 40px;
+    height: 40vh;
     display: flex;
     align-items: center;
-    justify-content: center;
+    overflow: hidden;
+    margin:  0 -40px;
 }
 
-.carrusel-entradas-home > h1 {
-    color: var(--bg-color);
-    text-align: center;
+.carrusel-entradas-home {
+    display: flex;
+    gap: 5rem;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding: 0 2rem;
 }
+
+.carrusel-entradas-home::-webkit-scrollbar {
+    display: none;
+}
+
+.carrusel-entradas-home {
+    scrollbar-width: none;
+}
+
+.carrusel-entradas-home > figure {
+    flex: 0 0 20rem;
+} */
+
+.entradas-home {
+    background-color: var(--ac-color);
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    margin:  0 -40px;
+}
+
+.carrusel-entradas-home {
+    display: flex;
+    gap: 5rem;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding: 0 2rem;
+}
+
+.carrusel-entradas-home::-webkit-scrollbar {
+    display: none;
+}
+
+.carrusel-entradas-home {
+    scrollbar-width: none;
+}
+
+.carrusel-entradas-home > figure {
+    flex: 0 0 20rem;
+}
+
+
+
+
 
 /* LAS DISCOTECAS SECTION HOME  */
 
+.discotecas-home {
+    padding: 6vh 0;
+}
+
 .discotecas-home > h1 {
     font-size: 5vw;
-    padding: 6rem 0;
+    padding: 6vh 0;
     text-align: center;
 }
 
@@ -698,8 +746,7 @@ footer {
     display: flex;
     flex-direction: column;
    justify-content: flex-end;
-    /* padding-bottom: 3%; */
-    flex: 1 1 300px;   /* texto */
+    flex: 1 1 300px;   
     min-width: 250px;
     min-width: 0;
 } 
@@ -1073,6 +1120,11 @@ gap: 2rem;
 }
 
 .p-diseñadores-home > span {
+    color: var(--ac-color);
+}
+
+.piedepagina-home {
+    font-family: Light;
     color: var(--ac-color);
 }
 
