@@ -548,7 +548,7 @@ footer {
 
 /* ----------------TICKET */
 
-.content2 {
+.content2, .content3 {
     margin-top: 100px;
 }
 
@@ -575,7 +575,7 @@ footer {
 
 /* FORMULARIO TICKET  */
 
-.content2, .content3 > h1 {
+.content2 > h1 {
     font-size: 2.5rem;
 }
 
@@ -731,20 +731,21 @@ input::-webkit-inner-spin-button {
 .input-box {
     position: relative;
     margin-bottom: 20px;
+    width: 100%;
 }
 
 /* INPUT */
 .input-box input {
-    width: 300px;
+    width: 100%;
     padding: 14px 12px;
     background: transparent;
     border: 2px solid white;
     color: white;
     font-size: 16px;
-    outline: none; /* QUITA borde azul del navegador */
+    outline: none; 
 }
 
-/* LABEL (texto dentro de la caja) */
+/* LABEL */
 .input-box label {
     position: absolute;
     top: 50%;
@@ -753,17 +754,39 @@ input::-webkit-inner-spin-button {
     color: white;
     /* opacity: 0.6; */
     pointer-events: none;
-    transition: 0.3s ease;
 }
 
 input::placeholder, textarea::placeholder {
     color: white;
-    opacity: 1; /* Necesario en Firefox para evitar transparencia */
+    opacity: 1; 
+    font-family: light;
 }
 
+#form-menu {
+    width: 100%;
+    flex: 2;
+}
 
+#form-menu > div{
+    display: flex;
+    flex-direction: row;
+    gap: 2vw;
+}
 
+.content3 > #total > #resumen {
+    display: flex;
+    justify-content: space-between;
+    height: 25vh;
+}
 
+.content3 > hr {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.content3 > .backto {
+    margin-top: 42.5vh;
+}
 
 
 
