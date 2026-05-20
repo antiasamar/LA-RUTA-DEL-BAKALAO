@@ -114,6 +114,7 @@ header {
     width: 100%;
     font-family: Medium;
     z-index: 9999;
+    box-shadow: 0px 26px 17px -9px rgba(0,0,0,0.4),0px 10px 15px -3px rgba(0,0,0,0.4);
 }
 
 nav > ul {
@@ -154,7 +155,7 @@ header > a > img {
     position: fixed;
     top: 70px;
     left: 0;
-    background-color: var(--pr-color);
+    background-color: var(--bg-color);
     z-index: 9999;
     overflow: hidden;
     max-height: 0;
@@ -219,20 +220,76 @@ header > a > img {
     font-family: Druk;
     font-size: 3.5rem;
     text-align: center;
-    padding: 100px 0 20px 0;
+    padding: 100px 0 0 0;
     display: flex;
     justify-content: left;
 }
 
 #mapa > div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0 0 60px 0;
+    padding-bottom: 30px;
+    position: relative;
 }  
 #mapa > div > img {
     width: 100%;
-    height: 78vh;
+    display: block;
+}
+
+.disco-caja {
+    background-color: var(--bg-color);      
+    color: var(--ac-color);              
+    border: 2px solid var(--ac-color);
+    padding: 14px 18px;
+    font-family: Druk, sans-serif;     
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+    white-space: nowrap;             
+    cursor: pointer;
+    width: fit-content;
+}
+
+.disco-caja:hover {
+    background-color: var(--ac-color);          
+    color: var(--bg-color);                   
+    border: 2px solid var(--text-color);
+    transition: 0.3s ease-in-out;
+    transform: scale(1.05);
+}
+
+
+.espiral-mapa, .spook-mapa, .puzzle-mapa, .chocolate-mapa, .barraca-mapa {
+    position: absolute;
+    z-index: 9998;   
+    text-decoration: none;
+}
+
+.espiral-mapa {
+    top: 16%;
+    left: 54%;
+}
+
+.spook-mapa {
+    top: 35%;
+    left: 57%;
+}
+
+.puzzle-mapa {
+    top: 51%;
+    left: 56%;
+}
+
+.chocolate-mapa {
+    top: 61%;
+    left: 64%;
+}
+
+.barraca-mapa {
+    top: 72%;
+    left: 72%;
+}
+
+.movil-mapa {
+    display: none;
+    opacity: 0;
 }
 
 
@@ -303,47 +360,55 @@ header > a > img {
     width: fit-content;
 }
 
-.images-disco > .slideshow-disco {
-    margin: 3rem auto;
+#discoteca > .images-disco > .slideshow-disco {
     display: flex;
+    justify-self: center;
     width: 80%;
     overflow-x: auto;
-    margin: 1rem auto;
-    display: flex;
     gap: 5rem;
     padding: 40px 0 0 0;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
 }
 
-.images-disco > .slideshow-disco > figure {
+#discoteca > .images-disco > .slideshow-disco::-webkit-scrollbar {
+    display: none;
+}
+
+#discoteca > .images-disco > .slideshow-disco > figure {
     flex: 0 0 20rem;
     align-items: center;
     padding: 1rem;
+    transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1), 0.4s ease;
+    cursor: pointer;
 }
 
-#discoteca > .images-disco > .delay-disco {
-    padding: 80px 0 80px 20px;
+#discoteca > .images-disco > .slideshow-disco:hover > figure {
+    filter: grayscale(100%) brightness(0.6);
+}
+
+#discoteca > .images-disco > .slideshow-disco > figure:hover {
+    transform: translateY(-15px) scale(1.03);
+    filter: grayscale(0%) brightness(1);
+}
+
+#discoteca > .images-disco > .carrusel-dots {
     display: flex;
     justify-content: center;
-    align-items: center;
-    transform: translatex(40px);
-}
-
-#discoteca > .images-disco > .delay-disco > figure {
-    display: flex;
-    gap: 40px;
-    align-items: flex-end;
-}
-
-#discoteca > .images-disco > .delay-disco > figure > figcaption {
-    display: flex;
-    align-items: flex-end;
     gap: 10px;
-    font-size: 1.2rem;
-    font-family: Light;
-    border-top: solid 1px var(--text-color);
-    height: auto;
-    width: 100%;
-    padding: 4px 0 0 0;
+}
+
+#discoteca > .images-disco > .carrusel-dots > .dot {
+    width: 8px;
+    height: 8px;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+#discoteca > .images-disco > .carrusel-dots > .dot.active {
+    background-color: var(--text-color);
 }
 
 #espiral {
@@ -361,8 +426,85 @@ header > a > img {
     letter-spacing: 2px;
 }
 
-#discoteca > .images-disco > .delay-disco > .banner-disco {
+#discoteca > .images-disco > .delay-disco {
+    padding: 20px 0 80px 0;
+    overflow: hidden;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#discoteca > .images-disco > .delay-disco > .delay-track {
+    display: flex;
+    gap: 40px;
     width: max-content;
+    padding: 20px;
+    animation: scrollDelayInfinito 22s linear infinite;
+}
+
+#discoteca > .images-disco > .delay-disco > .delay-track:hover {
+    animation-play-state: paused;
+}
+
+#discoteca > .images-disco > .delay-disco > .delay-track > .delay-item {
+    display: flex;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+#discoteca > .images-disco > .delay-disco > .delay-track > .delay-item > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+#discoteca > .images-disco > .delay-disco > .delay-track > .delay-item > .overlay-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: var(--text-color);
+    display: flex;
+    align-items:flex-start;
+    justify-content: left;
+    text-align: left;
+    font-family: Medium;
+    font-size: 1.2rem;
+    padding: 20px;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+#discoteca > .images-disco > .delay-disco > .delay-track > .delay-item:hover > img {
+    transform: scale(1.1); 
+}
+
+#discoteca > .images-disco > .delay-disco > .delay-track > .delay-item:hover > .overlay-text {
+    opacity: 1;
+}
+
+#discoteca > .images-disco > .delay-disco > figcaption {
+    font-size: 1.2rem;
+    font-family: Light;
+    border-top: solid 1px var(--text-color);
+    width: 60%;
+    text-align: center;
+    padding: 15px 0 0 0;
+    margin-top: 20px;
+}
+
+@keyframes scrollDelayInfinito {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(-327px * 6 - 40px * 6));
+    }
 }
 
 #discoteca > .images-disco > .galleryzoom-disco {
@@ -737,6 +879,82 @@ footer {
 
 @media screen and (max-width:768px) {
 
+    .wrapper {
+        padding: 0 20px;
+    }
+
+    /* MAPA */
+    .disco-caja {
+        transform: scale(0.6);
+    }
+
+    .disco-caja:hover {
+        transform: scale(0.65);
+    }
+
+    .espiral-mapa {
+    top: 13%;
+    left: 52%;
+    }
+
+    .spook-mapa {
+        top: 32%;
+        left: 55%;
+    }
+
+    .puzzle-mapa {
+        top: 48%;
+        left: 52%;
+    }
+
+    .chocolate-mapa {
+        top: 57%;
+        left: 59%;
+    }
+
+    .barraca-mapa {
+        top: 67%;
+        left: 67%;
+    }
+
+    .movil-mapa {
+        display: block;
+        opacity: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        justify-content: center;
+        align-items: center;
+        padding: 20px 0;
+    }
+
+    .movil-mapa > a {
+        background-color: var(--bg-color);
+        color: var(--ac-color);
+        padding: 8px 20px;
+        font-family: Druk;
+        font-size: 1.2rem;
+        text-align: center;
+        border: 2px solid var(--ac-color);
+        color: var(--ac-color);
+        width: 100%;
+    }
+
+    .movil-mapa > a:hover {
+        background-color: var(--ac-color);
+        color: var(--bg-color);
+        transition: 0.3s ease-in-out;
+        transform: scale(1.03);
+    }
+
+    .movil-mapa > a > p {
+        color: var(--ac-color);
+    }
+
+    .movil-mapa > a > p:hover {
+        color: var(--bg-color);
+    }
+
     /* DISCOTECA */
 
     .subtitle {
@@ -878,6 +1096,10 @@ footer {
 @media screen and (max-width:480px) {
 
 
+        .wrapper {
+        padding: 0 10px;
+    }
+
     header {
         padding-left: 10px;
     }
@@ -888,6 +1110,40 @@ footer {
 
     .hamb {
         display: block;
+    }
+
+    /* MAPA */
+    .disco-caja {
+        transform: scale(0.4);
+    }
+
+    .disco-caja:hover {
+        transform: scale(0.45);
+    }
+
+    .espiral-mapa {
+    top: 9%;
+    left: 42%;
+    }
+
+    .spook-mapa {
+        top: 26%;
+        left: 47%;
+    }
+
+    .puzzle-mapa {
+        top: 40%;
+        left: 47%;
+    }
+
+    .chocolate-mapa {
+        top: 49%;
+        left: 46%;
+    }
+
+    .barraca-mapa {
+        top: 58%;
+        left: 57%;
     }
 
     /* DISCOTECA */
@@ -911,10 +1167,6 @@ footer {
 }
 
      /* CATALOGO */
-
-    .wrapper {
-        padding: 0 10px;
-    }
 
     #catalog > h1 {
         font-size: 2.3rem; 
