@@ -7,6 +7,9 @@
 
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/style2.css">
+
+    <!-- ICONOS DE FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     
@@ -59,7 +62,7 @@
         
             <hr>
 
-            <div>
+            <div class="intro">
                 <div>
                     <p>Lugar:</p>
                     <h1>Spook Club</h1>
@@ -75,66 +78,89 @@
             </div>
 
             <hr>
-            <div>
-                <button class="value-control" onclick="numberInput.stepDown()" title="Decrease value" aria-label="Decrease value">-</button>
 
-                <input  class="value-input" type="number" value="1" min="1" name="numberInput" id="numberInput">
-
-                <button class="value-control" onclick="numberInput.stepUp()" title="Increase value" aria-label="Increase value">+</button>
+            <div id="total">
+                <div id="selection">
+                    <div id="entradas">
+                        <div class="entrada">
+                            <h2>Entrada general</h2>
+                            <p>Entrada con consumición</p>
+                        </div>
+                        <div class="entrada">
+                            <h2 class="money">12€</h2>
+                            <div>
+                                <button class="value-control" onclick="numberInput.stepDown()" title="Decrease value" aria-label="Decrease value">-</button>
+                
+                                <input  class="value-input" type="number" value="1" min="1" name="numberInput" id="numberInput">
+                
+                                <button class="value-control" onclick="numberInput.stepUp()" title="Increase value" aria-label="Increase value">+</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div id="entradas">
+                        <div class="entrada">
+                            <h2>Entrada VIP</h2>
+                            <p>Entrada con reservado</p>
+                        </div>
+                        <div class="entrada">
+                            <h2 class="money">18€</h2>
+                            <div>
+                                <button class="value-control" onclick="numberInput.stepDown()" title="Decrease value" aria-label="Decrease value">-</button>
+                
+                                <input  class="value-input" type="number" value="0" min="1" name="numberInput" id="numberInput">
+                
+                                <button class="value-control" onclick="numberInput.stepUp()" title="Increase value" aria-label="Increase value">+</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div id="resumen">
+                    <div class="ticket-resumen">
+                        <h2>x 1 Ticket general</h2>
+                        <h2>12€</h2>
+                    </div>
+                    <hr class="dotted-line">
+                    <div>
+                        <p>Gastos de gestión</p>
+                        <p>-</p>
+                    </div>
+                    <hr>
+                    <div>
+                        <h2>Total</h2>
+                        <h2>12€</h2>
+                    </div>
+                    <p>* Tasas e impuestos incluidos</p>
+                    <a class="btn negro" href="formu.html">COMPRAR ENTRADA</a>
+                </div>
             </div>
-            
+            <div class="mapaspook">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3082.5983928405394!2d-0.3377441230934817!3d39.410591071619045!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd6049e1700c70b7%3A0xd1ab42b49ab3f249!2sDiscoteca%20Spook!5e0!3m2!1ses!2ses!4v1779292148210!5m2!1ses!2ses" width="100%" height="300vh" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+            <div class="backto">
+                <a href="remember.html">
+                    <i class="fa-solid fa-arrow-left"></i>
+                    <p>VOLVER AL REMEMBER</p>
+                </a>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
            
         
         </div>
 
         
-
-
-
-
-
-
-
-
-
-
-
-        <p>hola</p>
-        <p>hola</p>
-        <p>hola</p>
-        <p>hola</p>
-        <p>hola</p>
-        <p>hola</p>
-        <p>hola</p>
-        <p>hola</p>
-        <p>hola</p>
-        <p>hola</p>
-        <p>hola</p>
-        <p>hola</p>
-        <p>hola</p>
-        <p>hola</p>
-        <p>hola</p>
-        <p>hola</p>
-        <p>hola</p>
-        <p>hola</p>
-        <p>hola</p>
-        <p>hola</p>
-        <p>hola</p>
-        <p>hola</p>
-        <p>hola</p>
-        <p>hola</p>
-        <p>hola</p>
-        <p>hola</p>
-        <p>hola</p>
-        <p>hola</p>
-        <p>hola</p>
-        <p>hola</p>
-        <p>hola</p>
-        <p>hola</p>
-        <p>hola</p>
-        <p>hola</p>
-        <p>hola</p>
-
 
 
         <div class="marquesina">

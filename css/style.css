@@ -446,11 +446,16 @@ footer {
 
 /* CATÁLOGO */
 
-/* REMEMBER  */
+/* -----------------REMEMBER  */
 
 .content {
     margin-top: 100px;
 }
+
+/* #title {
+    font-size: 3.2vw;
+} */
+
 
 .content > .espiral {
     margin-top: 20px;
@@ -498,13 +503,25 @@ footer {
     font-size: 1.2rem;
 }
 
-/* BOTÓN */
+/* @media (max-width: 9800) {
+    #title {
+        font-size: 3000rem;
+    }
+} */
+
+@media (max-width: 1050px) {
+    .carteles {
+        flex-direction: column;
+    }
+}
+
+/* -BOTÓN */
 
 .btn.negro {
     font-family: bold;
     font-size: 0.8rem;
     color: var(--ac-color);
-
+    text-align: center;
     border: 0.2rem solid var(--ac-color);
     border-radius: 2rem;
     padding: 0.7rem 1.5rem;
@@ -523,30 +540,13 @@ footer {
   }
 }
 
-/* @media (max-width: 1050px) {
-    .carteles {
-    display: flex;
-    
-    width: 100%;
-    height: 50%;
-    overflow-x: scroll;
-    overscroll-behavior-x: contain;
-    scroll-snap-type: x proximity;
-    gap: 15px;
-}
-
-.carteles > div {
-    position: relative;
-    scroll-snap-align: center;
-   
-}
-} */
 
 
 
 
 
-/* TICKET */
+
+/* ----------------TICKET */
 
 .content2 {
     margin-top: 100px;
@@ -557,26 +557,27 @@ footer {
     margin-bottom: 30px;
 }
 
-.content2 > div {
+.content2 > .intro {
     display: flex;
     flex-direction: row;
     gap: 70px;
 }
 
-.content2 > div > div > p {
+.content2 > .intro > div > p {
     font-family: Light ;
 }
 
-.content2 > div > div > h1 {
+.content2 > .intro > div > h1 {
     font-size: 2.5rem;
     margin-top: 10px;
     margin-bottom: 10px;
 }
 
 /* FORMULARIO TICKET  */
-----
 
-
+.content2 > h1 {
+    font-size: 2.5rem;
+}
 
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
@@ -584,16 +585,135 @@ input::-webkit-inner-spin-button {
   margin: 0;
 }
 
+#entradas {
+    display: flex;
+    flex-direction: row;
+    width: 60vw;
+    justify-content: space-between;
+    border: 2px solid var(--text-color);
+    padding: 1rem;
+}
+
+#selection {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+}
+
+.entrada > h2, #resumen > div > h2{
+    font-size: 1.5rem;
+}
+
+.money {
+    display: flex;
+    justify-content: right;
+}
+
+.entrada {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 0.25rem;
+}
+
+/* RESUMEN */
+
+#resumen {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#resumen > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 32vw;
+}
+
+#resumen >.dotted-line {
+    border: none;
+    border-top: 2px dashed #ffffff; 
+    height: 0;
+    
+}
+
+#resumen > div p, p {
+    font-family: light;
+}
+
+#resumen > div.ticket-resumen > h2 {
+    font-family: light;
+}
+
+#resumen > p {
+    font-size: 0.8rem;
+}
 
 
+#total {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 2vw;
+    /* margin-bottom: 27.3vh; */
+}
+
+/* MAPA TICKETS */
+
+.mapaspook {
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+}
+
+/* RESPONSIVE TICKETS */
+
+@media (max-width: 1024px) {
+  .content2 > h1, .content2 > .intro > div > h1 {
+    font-size: 4vw;
+  }
+  .content2 > #total > #selection > #entradas >.entrada > h2, .content2 > #total > #resumen > .ticket-resumen > h2, .content2 > #total > #resumen > div > h2  {
+    font-size: 2.4vw;
+  }
+  .content2 > #total > #resumen > div > p {
+    font-size: 1.8vw;
+  }
+
+}
 
 
+/* -BOTON BACK */
+
+.backto {
+    padding-bottom: 20px;
+}
+
+.backto > a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.backto > a > p {
+    font-size: 1rem;
+    font-family: Druk;
+}
 
 
 
 
 
 /* FORMU */
+
+
+
+
+
+
+
+
+
 
 
 

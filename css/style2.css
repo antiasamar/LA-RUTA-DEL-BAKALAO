@@ -5,51 +5,10 @@
     color: var(--text-color);
 }
 
-body{
+body {
     background-color: #000000;
 }
 
-.cantidad-contenedor {
-    display: flex;
-    align-items: center;
-    border: 1px solid #dc0c0c;
-    border-radius: 5px;
-    width: fit-content;
-}
-
-.cantidad-contenedor button {
-    background-color: #1bbecd;
-    border: none;
-    padding: 10px 15px;
-    font-size: 18px;
-    cursor: pointer;
-    transition: background 0.2s;
-}
-
-.cantidad-contenedor button:hover {
-    background-color: #d41212;
-}
-
-.cantidad-contenedor input {
-    border: none;
-    text-align: center;
-    width: 50px;
-    font-size: 16px;
-    font-weight: bold;
-}
-
-/* Ocultar las flechas de los input number en navegadores web */
-/* .cantidad-contenedor input::-webkit-outer-spin-button,
-.cantidad-contenedor input::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
-}
-
-input[type=number]::-webkit-inner-spin-button,
-input[type=number]::-webkit-outer-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-} */
 
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
@@ -58,22 +17,6 @@ input::-webkit-inner-spin-button {
 }
 
 
-
-/* .value-control {
-    width: 3rem;
-    height: 3rem;
-    border-radius: 50px;
-    border-color: #7bc71e;
-    border-style: solid;
-    background-color: #ffffff;
-    border
-}
-
-.value-control > p {
-    color: #7bc71e;
-}
-
-#ffff01 */
 
 :root {
   --border-radius: 50px;
@@ -109,14 +52,20 @@ input::-webkit-inner-spin-button {
 .value-input {
   margin: 0;
   height: var(--control-size);
-  width: 80px;
+  width: 30px;
   border: var(--border);
   border-radius: var(--border-radius);
   text-align: center;
   font-size: var(--font-size);
 }
 
-#numberInput.value-input {
+/* #numberInput.value-input {
+    background: none;
+    color: white;
+    border: none;
+} */
+
+.value-input {
     background: none;
     color: white;
     border: none;
