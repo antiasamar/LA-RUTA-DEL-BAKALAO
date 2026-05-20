@@ -6,6 +6,7 @@
     <title>Document</title>
 
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style2.css">
 </head>
 <body>
     
@@ -19,7 +20,7 @@
                         <a href="">MAPA</a>
                     </li>
                     <li>
-                        <a href="">CATÁLOGO</a>
+                        <a href="catalog.html">CATÁLOGO</a>
                     </li>
                     <li>
                         <a href="remember.html">REMEMBER</a>
@@ -53,7 +54,7 @@
         </header>
 
        
-        <div class="content">
+        <div class="content2">
             <h1>ENTRADAS</h1>
         
             <hr>
@@ -72,8 +73,17 @@
                 </div>
 
             </div>
-        
+
             <hr>
+            <div>
+                <button class="value-control" onclick="numberInput.stepDown()" title="Decrease value" aria-label="Decrease value">-</button>
+
+                <input  class="value-input" type="number" value="1" min="1" name="numberInput" id="numberInput">
+
+                <button class="value-control" onclick="numberInput.stepUp()" title="Increase value" aria-label="Increase value">+</button>
+            </div>
+            
+           
         
         </div>
 

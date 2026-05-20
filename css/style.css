@@ -545,28 +545,51 @@ footer {
 
 
 
+
 /* TICKET */
 
-.content > hr {
+.content2 {
+    margin-top: 100px;
+}
+
+.content2 > hr {
     margin-top: 30px;
     margin-bottom: 30px;
 }
 
-.content > div {
+.content2 > div {
     display: flex;
     flex-direction: row;
     gap: 70px;
 }
 
-.content > div > div > p {
+.content2 > div > div > p {
     font-family: Light ;
 }
 
-.content > div > div > h1 {
+.content2 > div > div > h1 {
     font-size: 2.5rem;
     margin-top: 10px;
     margin-bottom: 10px;
 }
+
+/* FORMULARIO TICKET  */
+----
+
+
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+
+
+
+
+
+
 
 
 
