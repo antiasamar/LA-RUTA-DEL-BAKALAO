@@ -575,7 +575,7 @@ footer {
 
 /* FORMULARIO TICKET  */
 
-.content2 > h1 {
+.content2, .content3 > h1 {
     font-size: 2.5rem;
 }
 
