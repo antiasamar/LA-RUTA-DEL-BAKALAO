@@ -89,11 +89,17 @@
                         <div class="entrada">
                             <h2 class="money">12€</h2>
                             <div>
-                                <button class="value-control" onclick="numberInput.stepDown()" title="Decrease value" aria-label="Decrease value">-</button>
-                
-                                <input  class="value-input" type="number" value="1" min="1" name="numberInput" id="numberInput">
-                
-                                <button class="value-control" onclick="numberInput.stepUp()" title="Increase value" aria-label="Increase value">+</button>
+                                <button class="value-control"
+                                onclick="this.nextElementSibling.stepDown()">
+                                -
+                                </button>
+
+                                <input class="value-input" type="number" value="1" min="1">
+
+                                <button class="value-control"
+                                onclick="this.previousElementSibling.stepUp()">
+                                +
+                                </button>
                             </div>
                         </div>
                     </div>
@@ -106,11 +112,17 @@
                         <div class="entrada">
                             <h2 class="money">18€</h2>
                             <div>
-                                <button class="value-control" onclick="numberInput.stepDown()" title="Decrease value" aria-label="Decrease value">-</button>
-                
-                                <input  class="value-input" type="number" value="0" min="1" name="numberInput" id="numberInput">
-                
-                                <button class="value-control" onclick="numberInput.stepUp()" title="Increase value" aria-label="Increase value">+</button>
+                                <button class="value-control"
+                                onclick="this.nextElementSibling.stepDown()">
+                                -
+                                </button>
+
+                                <input class="value-input" type="number" value="0" min="1">
+
+                                <button class="value-control"
+                                onclick="this.previousElementSibling.stepUp()">
+                                +
+                                </button>
                             </div>
                         </div>
                     </div>
