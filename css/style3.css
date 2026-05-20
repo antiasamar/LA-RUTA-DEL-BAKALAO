@@ -58,7 +58,7 @@ body {
     border: 2px solid white;
     color: white;
     font-size: 16px;
-    outline: none; /* QUITA borde azul del navegador */
+    outline: none; 
 }
 
 /* LABEL (texto dentro de la caja) */
@@ -75,5 +75,5 @@ body {
 
 input::placeholder, textarea::placeholder {
     color: white;
-    opacity: 1; /* Necesario en Firefox para evitar transparencia */
+    opacity: 1; 
 }

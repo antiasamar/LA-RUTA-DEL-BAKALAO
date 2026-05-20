@@ -515,6 +515,18 @@ footer {
     }
 }
 
+@media (max-width: 720px) {
+  #title {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  #title {
+    font-size: 2.3rem;
+  }
+}
+
 /* -BOTÓN */
 
 .btn.negro {
@@ -575,9 +587,9 @@ footer {
 
 /* FORMULARIO TICKET  */
 
-.content2 > h1 {
+/* .content2 > h1 {
     font-size: 2.5rem;
-}
+} */
 
 /* input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
@@ -668,27 +680,33 @@ input::-webkit-inner-spin-button {
 /* MAPA TICKETS */
 
 .mapaspook {
-    margin-top: 3vh;
-    margin-bottom: 3vh;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
 }
 
 /* RESPONSIVE TICKETS */
 
-@media (max-width: 1024px) {
-  .content2 > h1, .content2 > .intro > div > h1 {
-    font-size: 4vw;
+@media (max-width: 720px) {
+  .content2 > h1, .content2 > .intro > div > h1, .content3 > h1 {
+    font-size: 2.5rem;
   }
-  .content2 > #total > #selection > #entradas >.entrada > h2, .content2 > #total > #resumen > .ticket-resumen > h2, .content2 > #total > #resumen > div > h2  {
+  /* .content2 > #total > #selection > #entradas >.entrada > h2, .content2 > #total > #resumen > .ticket-resumen > h2, .content2 > #total > #resumen > div > h2 {
     font-size: 2.4vw;
-  }
-  .content2 > #total > #resumen > div > p, .content2 > #total > #resumen > p, .content2 > #total > #selection > #entradas > .entrada > p {
+  } */
+  /* .content2 > #total > #resumen > div > p, .content2 > #total > #resumen > p, .content2 > #total > #selection > #entradas > .entrada > p {
     font-size: 1.8vw;
   }
 
   .content2 > .intro > div > p {
     font-size: 0.8rem;
-  }
+  } */
 
+}
+
+@media (max-width: 480px) {
+  .content2 > h1, .content2 > .intro > div > h1, .content3 > h1 {
+    font-size: 2.3rem;
+  }
 }
 
 @media (max-width: 700px) {
@@ -724,7 +742,7 @@ input::-webkit-inner-spin-button {
 
 
 
-/* FORMU */
+/* --------------FORMU */
 
 
 /* CAJA */
@@ -787,6 +805,31 @@ input::placeholder, textarea::placeholder {
 .content3 > .backto {
     margin-top: 42.5vh;
 }
+
+@media screen and (max-width: 480px) {
+    
+    #form-menu > div {
+        display: flex;
+        flex-direction: column;
+        gap: none;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    
+    .content3 > .backto {
+    margin-top: 27.5vh;
+}
+}
+
+@media screen and (max-width: 480px) {
+    
+    .content3 > .backto {
+    margin-top: 13.7vh;
+}
+}
+
+
 
 
 
