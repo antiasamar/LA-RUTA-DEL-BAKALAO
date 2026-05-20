@@ -70,3 +70,9 @@ input::-webkit-inner-spin-button {
     color: white;
     border: none;
 }
+
+@media (max-width: 480px) {
+    :root {
+  --control-size: 25px;
+}
+}
