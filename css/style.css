@@ -162,7 +162,7 @@ header > a > img {
     position: fixed;
     top: 70px;
     left: 0;
-    background-color: var(--pr-color);
+    background-color: var(--bg-color);
     z-index: 9999;
     overflow: hidden;
     max-height: 0;
@@ -322,10 +322,6 @@ footer {
 }
 
     
-/* .form-item-footer > div > a > p:hover {
-    color: var(--ac-color);
-    transform: scale(1.1);
-} */
 
 @media (min-width: 1024px) {
   .form-item-footer > div > a > p:hover {
@@ -461,8 +457,8 @@ footer {
 
 
 .logo-intro {
-    width: 40vw;
-    max-width: 80%;
+    width: 50vw;
+    max-width: 80vw;
     opacity: 0;
     animation: fadeUp 1.2s ease forwards;
     animation-delay: 2s;
@@ -511,14 +507,11 @@ footer {
 /* HERO SECTION HOME */
 
 #hero-home{
+
     background-color: var(--ac-color);
     width: 100vw;
-    /* max-height: 100%; */
-    margin: 0px -40px;
+    margin: 0 -40px;
     display: flex;
-    max-height: 95vh;
-    min-height: 50vh;
-    height: fit-content;
 }
 
 .arrow-home > img {
@@ -531,6 +524,9 @@ footer {
     max-height: 100%;
     min-height: 50%;
     overflow: hidden;
+    width: 100%;
+    height: auto;
+    display: block;
 }
 
 .arrow-home {
@@ -698,6 +694,7 @@ footer {
     font-size: 5vw;
     padding: 6vh 0;
     text-align: center;
+     min-width: 200px;
 }
 
 
@@ -782,7 +779,7 @@ footer {
    width: 100%;
    height: auto;
    padding-bottom: 0.5rem;
-   min-width: 350px;
+   /* min-width: 350px; */
    max-width: 500px;
 }
 
@@ -809,7 +806,7 @@ footer {
     font-size: 6vw;
     padding: 6vh 0;
     text-align: center;
-    gap: 2rem;
+    /* gap: 2rem; */
 }
 
 .first-diseño-home {
@@ -956,14 +953,10 @@ footer {
   
 }
 
-.armandoysilvia > div:first-child > div:last-child > img {
-    max-width: 300px;
-}
-
 .middlechild-armandoysilvia {
     display: flex;
     gap: 2rem;
-      flex-wrap: wrap;
+    flex-wrap: wrap;
 }
 
 .middlechild-armandoysilvia > div {
@@ -1149,7 +1142,7 @@ gap: 2rem;
 img {
     width: 100%;
    height: auto;
-   min-width: 180px;
+   min-width: 100px;
    max-width: 600px;
    object-fit: contain;
 }
@@ -1162,7 +1155,7 @@ img {
     color: var(--ac-color);
 }
 
-/* SEPARADOR FOTO 1 MARQEUSINA HOME  */
+/* SEPARADOR FOTO 1 MARQUESINA HOME  */
 
 
 
@@ -1196,14 +1189,190 @@ img {
 
 
 
+/* INTERMEDIO DESKTOP-TABLET */
+
+@media screen and (max-width:1000px) {
+    .middlechild-armandoysilvia {
+        flex-direction: column;
+    }
+
+    .grupodequedeque > div:first-child  {
+        flex-direction: column;
+    }
+
+    .grupodequedeque > div:last-child {
+        flex-direction: column;
+    }
+
+    .quiquecompany > div:first-child {
+        flex-direction: column-reverse;
+    }
+
+    .armandoysilvia > div:first-child > div:last-child {
+    display: none;
+   }
+   .armandoysilvia > div:first-child > div:first-child {
+        align-content: center;
+   }
+
+    .armandoysilvia > div:first-child > div:first-child > p {
+        text-align: center;
+          padding-left: 0;
+    }
+
+    .middlechild-armandoysilvia> div:last-child > p {
+        text-align: center;
+        padding-right: 0;
+    }
+
+    .middlechild-armandoysilvia > div:first-child {
+        align-content: center;
+    }
+
+    .middlechild-armandoysilvia > div:first-child > img {
+        align-self: center;
+    }
+
+    .middlechild-armandoysilvia > div:first-child > p {
+        align-self: center;
+    }
+
+    .armandoysilvia > div:last-child {
+        display: none;
+    }
+
+    .armandoysilvia > div:last-child > div:first {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+    } 
+
+    .armandoysilvia > div:last-child > div:first > img {
+        align-self: center;
+    }
+
+    .grupodequedeque > div:first-child > div:first-child {
+        align-self: center;
+    }
+    
+
+    .grupodequedeque > div:first-child > div:first-child > img {
+        align-self: center;
+     }
+
+    .grupodequedeque > div:first-child > div:first-child > p {
+        align-self: center;
+        text-align: center;
+        padding-left: 0;
+    }
+
+    .grupodequedeque > div:first-child > div:last-child {
+        display: none;
+     }
+
+
+    .grupodequedeque > div:last-child > div:first-child {
+        align-content: center;
+    }
+
+    .grupodequedeque > div:last-child > div:first-child > img {
+        align-self: center;
+    }
+
+    .grupodequedeque > div:last-child > div:first-child > p {
+        align-self: center;
+    }
+
+    .grupodequedeque > div:last-child > div:last-child > p {
+        align-self: center;
+        padding-right: 0;
+        text-align: center;
+    }
+
+    .quiquecompany > div:first-child > div:first-child > p {
+        align-self: center;
+        padding-left: 0;
+        text-align: center;
+    }
+
+    .quiquecompany > div:first-child > div:last-child {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+    }
+
+    .quiquecompany > div:first-child > div:last-child > img {
+        align-self: center;
+    } 
+    .quiquecompany > div:first-child > div:last-child > p {
+        align-self: center;
+    }
+
+    .quiquecompany > div:last-child > div:last-child {
+        display: none;
+     }
+
+    .quiquecompany > div:last-child > div:first-child {
+        align-content: center;
+    } 
+
+    .quiquecompany > div:last-child > div:first-child > img {
+        align-self: center;
+    }
+
+    .quiquecompany > div:last-child > div:first-child > p {
+        align-self: center;
+    }
+  
+    .info-diseñadores-home {
+         gap: 20vh;
+    }
+
+    .declive-home > h1 {
+    padding: 3vh 0;
+    }
+
+    .info-declive-home {
+        flex-direction: column;
+    }
+
+    .info-declive-home > div:last-child  {
+        padding-top: 2rem;
+     }
+
+}
+
 /* TABLET  */
 
 @media screen and (max-width:768px) {
+
+
+    .wrapper {
+        padding: 0 20px;
+    }
+
+    #hero-home{
+    margin: 0 -20px;
+    }
+
+    .declive-home {
+        margin: 0 -20px ;
+         padding-right: 20px;
+        padding-left: 20px;
+    }
+
+    .separador-frase-home {
+    margin: 0 -20px ;
+    padding: 6vh 20px;
+    }
+    
+
 
     /* FOOTER */
 
     footer {
         padding-top: 4rem;
+        margin: 0 -20px;
     }
 
     .bg-yellow-footer > div > img {
@@ -1215,15 +1384,159 @@ img {
     .check-footer {
         padding-bottom: 3rem;
     }
+
+    /* INDEX */
+
+    .logo-intro {
+    width: 60vw;
+    max-width: 80vw;
+    opacity: 0;
+    animation: fadeUp 1.2s ease forwards;
+    animation-delay: 2s;
+    }
+
+    /* HOME */
+
+    .arrow-home {
+        display: none;
+    }
+
+    #intro-home > div:first-child > p {
+        font-family: Druk;
+        font-size: 2rem;
+        text-align: center;
+    }
+
+
+    .entradas-home {
+        background-color: var(--ac-color);
+        height: 30vh;
+        display: flex;
+        align-items: center;
+        overflow: hidden;
+        margin:  0 -40px;
+    }
+
+    .text-discotecas-home {
+        display: flex;
+        flex-direction: column;
+        gap: 10vh;
+    }
+
+    .diseño-home {
+        padding: 3vh 0;
+    }
+
+    .first-diseño-home {
+        flex-direction: column;
+    }
+
+    .second-diseño-home {
+        flex-direction: column;
+    }
+
+    .first-diseño-home > div:first-child {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .first-diseño-home > div:first-child > img:last-child {
+        align-self: center;
+    }
+
+    .left-align-diseño-home > div {
+       
+        justify-content: center;
+    }
+
+    .info-diseñadores-home {
+         gap: 15vh;
+    }
+
+    .diseñadores-home {
+         padding-top: 3vh;
+         padding-bottom: 6vh;
+    }
+
+    .separador-frase-home > p {
+        font-family: Druk;
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .desconocido-home > div > img:first-child {
+        display: none;
+    }
+
+    .desconocido-home {
+        padding-top: 3vh;
+        padding: 3vh;
+    }
+
+    .discotecas-home {
+        padding: 0;
+    }
+
+    .info-declive-home > div:first-child > img {
+        align-self: center;
+    }
+
+    #intro-home > div:last-child > div:first-child > h2 {
+    font-size: 2rem;
 }
+
+   
+    
+}
+
+   
+
+
+    
+
+    
+
+    
+
+
+
+  
+    
+
+
+
+
 
 
 /* MOBILE */
 
 @media screen and (max-width:480px) {
 
+    .wrapper {
+        padding: 0 10px;
+    }
+
     header {
         padding-left: 10px;
+    }
+
+    footer {
+        margin: 0 -10px;
+    }
+
+    #hero-home{
+    margin: 0 -10px;
+    }
+
+    .declive-home {
+        margin: 0 -10px ;
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+
+    .separador-frase-home {
+    margin: 0 -10px ;
+    padding: 6vh 10px;
     }
     
      
@@ -1303,16 +1616,118 @@ img {
         margin-bottom: 2rem;
     }
 
-   
+    /* HOME */
 
+     #intro-home > div:first-child > p {
+        font-family: Druk;
+        font-size: 1.3rem;
+        text-align: center;
+    }
 
+    #intro-home > div:last-child > div:first-child > p {
+    font-size: 1.5rem;
+    }   
 
+    .piedepagina-home {
+    font-size: 1rem;
+    }
 
+    .text-discotecas-home > div > div:last-child > p {
+        font-size: 1.5rem;
+    }
 
-
-   
-
-
+    .text-discotecas-home > div > div:last-child {
+        font-size: 3rem;
+    }
     
+    .text-discotecas-home {
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    .text-discotecas-home > div {
+        gap: 1rem;
+    }
+
+    .info-declive-home > div:last-child > p {
+        font-size: 1.5rem;
+    }
+
+    .info-declive-home > div:last-child > h2 {
+        font-size: 2rem;
+    }
+
+    .first-diseño-home > div:last-child > p {
+         font-size: 1.5rem;
+    } 
+
+    .second-diseño-home > div:last-child > p {
+        font-size: 1.5rem;
+    }
+
+    .info-diseñadores-home {
+         gap: 8vh;
+        
+    }
+
+     .diseñadores-home {
+         padding-top: 0vh;
+         padding-bottom: 4vh;
+    }
+
+    .p-diseñadores-home {
+        font-size: 1.5rem;
+    }
+
+
+
+    .separador-frase-home > p {
+        font-family: Druk;
+        font-size: 1.5rem;
+        text-align: center;
+        padding: 1rem;
+    }
+
+    .desconocido-home > div > img:last-child {
+        display: none;
+    }
+
+    .desconocido-home > p {
+        font-size: 1.5rem;
+        padding-bottom: 2vh;
+    }
+
+    .desconocido-home {
+        padding-top: 10vh;
+        padding-bottom: 10h;
+        padding: 10px;
+        gap: 1rem;
+    }
+
+    .desconocido-home > div {
+        padding-bottom: 1.5rem;
+    }
+
+    .desconocido-home > h1 {
+        padding-bottom: 2rem;
+        padding-top: 2rem;
+    }
+
+    .diseño-home {
+        padding: 2vh 0;
+    }
+
+    .diseño-home > h1 {
+        padding-top: 3rem;
+        padding-bottom: 2rem;
+    }
+
+   
+
+
+
+
+   
 
 }
