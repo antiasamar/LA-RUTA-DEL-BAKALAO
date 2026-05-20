@@ -3,12 +3,188 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Formulario</title>
 
     <link rel="stylesheet" href="css/style.css">
 
 </head>
 <body>
-    
+    <div class="wrapper">
+        <header>
+            <a href=""><img src="media/img/logok.png" alt=""></a>
+            <!-- menu desktop -->
+            <nav class="nav-desktop">
+                <ul class="menu-desktop">
+                    <li>
+                        <a href="">MAPA</a>
+                    </li>
+                    <li>
+                        <a href="">CATÁLOGO</a>
+                    </li>
+                    <li>
+                        <a href="">REMEMBER</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <!-- Icono hamburguesa  (y X)-->
+            <input type="checkbox" id="sideMenu" class="side-menu">
+            <label class="hamb" for="sideMenu">
+                <i class="fa-solid fa-bars"></i>
+                <i class="fa-solid fa-xmark"></i>
+            </label>
+
+
+            <!-- menu móvil -->
+            <nav class="nav-mobile">
+                <ul class="menu-mobile">
+                    <li>
+                        <a href="">MAPA</a>
+                    </li>
+                                <li>
+                        <a href="">CATÁLOGO</a>
+                    </li>
+                                <li>
+                        <a href="">REMEMBER</a>
+                    </li>
+                </ul>
+            </nav>
+
+        </header>
+
+        <div class="content3">
+            <br><br><br><br><br><br><br><br>
+            <form id="form-menu">
+                <div>
+                    <div class="input-box">
+                        <input class="value-input-form" type="text" id="uname" name="user_name" required maxlength="32" placeholder="Nombre">
+                    </div>
+                    <div class="input-box">
+                        <input class="value-input-form" type="text" id="usurname" name="user_surname" required maxlength="32" placeholder="Apellidos">
+                    </div>
+                </div>
+                <div>
+                    <div class="input-box">
+                        <input class="value-input-form" type="email" name="user_email" id="uemail" required placeholder="Email">
+                    </div>
+                    <div class="input-box">
+                        <input class="value-input-form" type="reemail" name="user_reemail" id="ureemail" required placeholder="Confirmar email">
+                    </div>
+                </div>
+            </form>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="marquesina">
+            <div>
+                <p>ARCHIVO VISUAL DE LA RUTA</p>
+                <p>//</p>
+                <p>VALENCIA</p>
+                <p>//</p>
+                <p>1980-1995</p>
+                <p>//</p>
+                <p>ARCHIVO VISUAL DE LA RUTA</p>
+                <p>//</p>
+                <p>VALENCIA</p>
+                <p>//</p>
+                <p>1980-1995</p>
+                <p>//</p>
+                <p>ARCHIVO VISUAL DE LA RUTA</p>
+                <p>//</p>
+                <p>VALENCIA</p>
+                <p>//</p>
+                <p>1980-1995</p>
+                <p>//</p>
+                <p>ARCHIVO VISUAL DE LA RUTA</p>
+                <p>//</p>
+                <p>VALENCIA</p>
+                <p>//</p>
+                <p>1980-1995</p>
+                <p>//</p>
+               
+            </div>
+        </div>
+
+        <footer>
+
+            <div class="bg-yellow-footer">
+
+                <div class="center-footer">
+                    <img src="media/img/logonegro.png" alt="">
+                </div>
+
+                <div class="form-item-footer center-footer">
+                    <h2>NEWSLETTER</h2>
+                    <div> 
+                        <input type="email" id="uemail" name="user_email" required>
+                        <a href="">
+                            <p>
+                                SUSCRÍBETE
+                            </p>
+                        </a>
+                        
+                    </div>
+                    
+                </div>
+                
+                <div class="check-footer">
+                    <input type="checkbox" name="accept_subs" id="subscribe">
+                    <p>Deseo recibir correos promocionales.</p>
+                </div>
+
+                <div>
+                    <div>
+                        <h2>ORGANIZAN:</h2>
+                        <p>Marina Moret</p>
+                        <p>Lilia Redero</p>
+                        <p>Antía Sampedro</p>
+                    </div>
+
+                    <div>
+                        <a href="">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a> 
+
+                        <a href="">
+                        <i class="fa-brands fa-instagram"></i>
+                        </a> 
+
+                        <a href="">
+                            <i class="fa-brands fa-x-twitter"></i>
+                        </a> 
+
+                        <a href="">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a> 
+
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="bg-black-footer">
+                <ul>
+                    <li><p>Política de privacidad</p></li>
+                    <li><p>Cookies</p></li>
+                    <li><p>Términos y condiciones</p></li>
+                    <li><p>Contacto</p></li>
+                </ul>
+
+            </div>
+
+        </footer>
+    </div>
 </body>
 </html>
