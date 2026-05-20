@@ -1,5 +1,6 @@
+## INSTRUCCIONES NOMBRES SELECTORES: 
 
-INSTRUCCIONES NOMBRES SELECTORES: 
+loquesea-sección-página (usar enteras a no ser que sea un nombre muy largo)
 
 loquesea-sección-página (usar enteras a no ser que sea un nombre muy largo)
 
@@ -13,3 +14,4 @@ ANTÍA - REVISAR:
 
 
 
+    
